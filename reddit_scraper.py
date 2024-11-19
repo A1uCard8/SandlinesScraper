@@ -1,21 +1,30 @@
 import praw
 import json
 
-# Step 1: Connect to Reddit using PRAW
 reddit = praw.Reddit(
     client_id="YOUR_CLIENT_ID",
     client_secret="YOUR_CLIENT_SECRET",
     user_agent="YOUR_USER_AGENT"
 )
 
-# Step 2: Fetch Reddit posts
-subreddit_name = "learnpython"  # Specify the subreddit to scrape
+subreddit_name = "politics"  # Specify the subreddit to scrape
 subreddit = reddit.subreddit(subreddit_name)
 
-# Fetch the top 10 hot posts
 posts = []
-for post in subreddit.hot(limit=10):
-    post_data = {
+for post in subreddit.hot(limit=50):
+    post.comments.replace_more(limit=0)
+    comments = []
+
+    for comment in post.comments.list()[:10]:
+        comments.append({
+            "id": comment.id,
+            "author": str(comment.author),
+            "body": comment.body,
+            "score": comment.score,
+            "created_utc": comment.created_utc
+        })
+    
+    posts.append({
         "id": post.id,
         "title": post.title,
         "score": post.score,
@@ -23,11 +32,10 @@ for post in subreddit.hot(limit=10):
         "url": post.url,
         "created_utc": post.created_utc,
         "author": str(post.author),
-    }
-    posts.append(post_data)
+        "comments": comments  # Nested comments data
+    })
 
-# Step 3: Save data to a JSON file
-output_file = f"{subreddit_name}_posts.json"
+output_file = f"{subreddit_name}_posts_with_comments.json"
 with open(output_file, "w") as json_file:
     json.dump(posts, json_file, indent=4)
 
