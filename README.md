@@ -11,6 +11,7 @@ Potential uses include:
 - Scraped Data Storage: JSON? MongoDB? SQL?
 - APIs Used: Praw, Reddit
 - Methods of Analysis: Keywords, Sentiment Analysis
+- API vs HTML web scraping?
 
 
 Reddit:
