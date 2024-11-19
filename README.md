@@ -22,4 +22,5 @@ Access to Reddit API: https://www.reddit.com/prefs/apps
 
 
 NextDoor:
-Public repository of a NextDoor scraper that could be potentially used and modified (currently exports to a csv file): https://github.com/chanwooh/Nextdoor-Script
+Public repository of a NextDoor scraper that could be potentially used and modified (currently exports to a csv file): https://github.com/chanwooh/Nextdoor-Script (HTML scraping)
+Apply for NextDoor API to use: https://developer.nextdoor.com/reference/applying-for-access
