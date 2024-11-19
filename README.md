@@ -9,6 +9,7 @@ Potential uses include:
 
 11/19: Research Web Scraping Methodologies for relevant Social Media Platforms
 - Scraped Data Storage: JSON? MongoDB? SQL?
+- MongoDB Database: https://cloud.mongodb.com/v2/673cee9dc464e07dbea515ea#/overview
 - APIs Used: Praw, Reddit
 - Methods of Analysis: Keywords, Sentiment Analysis
 - API vs HTML web scraping?
