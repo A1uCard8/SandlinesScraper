@@ -15,6 +15,7 @@ Potential uses include:
 
 Reddit:
 Praw
+Access to Reddit API: https://www.reddit.com/prefs/apps
 
 
 NextDoor:
