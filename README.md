@@ -8,13 +8,14 @@ Potential uses include:
 - Inform marketing efforts and allow for more accurate targeted advertisements
 
 11/19: Research Web Scraping Methodologies for relevant Social Media Platforms
-- Scraped Data Storage:
-- APIs Used:
+- Scraped Data Storage: JSON? MongoDB? SQL?
+- APIs Used: Praw, Reddit
 - Methods of Analysis: Keywords, Sentiment Analysis
 
 
 Reddit:
-Praw
+
+Praw Documentation: https://praw.readthedocs.io/en/stable/code_overview/reddit_instance.html
 Access to Reddit API: https://www.reddit.com/prefs/apps
 
 
