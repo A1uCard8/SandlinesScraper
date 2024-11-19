@@ -1,1 +1,13 @@
-[]
+#Example
+[
+    {
+        "title": "Breaking: New Policy Announcement",
+        "link": "https://www.reddit.com/r/politics/comments/abc123/breaking_new_policy_announcement/",
+        "score": "1.2k"
+    },
+    {
+        "title": "Senator speaks out on recent events",
+        "link": "https://www.reddit.com/r/politics/comments/def456/senator_speaks_out_on_recent_events/",
+        "score": "980"
+    }
+]
