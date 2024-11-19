@@ -12,7 +12,7 @@ Potential uses include:
 - MongoDB Database: https://cloud.mongodb.com/v2/673cee9dc464e07dbea515ea#/overview
 - APIs Used: Praw, Reddit
 - Methods of Analysis: Keywords, Sentiment Analysis
-- API vs HTML web scraping?
+- API vs HTML web scraping? (API access to the website data is far more scalable and adaptable)(My understanding is that HTML web scraping is for one time analysis and not concurrent live scraping)
 
 
 Reddit:
@@ -22,3 +22,4 @@ Access to Reddit API: https://www.reddit.com/prefs/apps
 
 
 NextDoor:
+Public repository of a NextDoor scraper that could be potentially used and modified (currently exports to a csv file): https://github.com/chanwooh/Nextdoor-Script
